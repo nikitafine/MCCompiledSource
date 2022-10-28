@@ -1591,14 +1591,14 @@ namespace mc_compiled.MCC.Compiler
             {
                 executor.PushSelectorExecute();
                 executor.AddCommand(Command.StructureLoad(fileName, minX, minY, minZ,
-                    StructureRotation._0_degrees, StructureMirror.none, false, true, percent));
+                    StructureRotation._0_degrees, StructureMirror.none, false, true, false, percent));
                 executor.PopSelector();
             }
             else
             {
                 executor.PushSelectorExecute();
                 executor.AddCommand(Command.StructureLoad(fileName, minX, minY, minZ,
-                    StructureRotation._0_degrees, StructureMirror.none, false, true, percent, seed));
+                    StructureRotation._0_degrees, StructureMirror.none, false, true, false, percent, seed));
                 executor.PopSelector();
             }
         }
